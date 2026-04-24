@@ -1,36 +1,35 @@
 === 創業迭代記錄 ===
-時間戳記: 2026-04-24T13:00:28.632342
-焦點領域: AI-powered micro-services for local Taiwanese businesses using existing platforms
+時間戳記: 2026-04-24T13:16:04.003961
+焦點領域: Sustainable everyday products and services for Taiwanese consumers
 趨勢摘要:
-- AI工具降低了小型企業自動化的門檻，許多Saas平台提供低程式碼解決方案
-- 在台灣，LINE 是主要的商業溝通管道，商家普遍使用 LINE Official Account
-- 許多傳統小店（餐飲、美容、零售）仍依賴人工處理預訂、點單和客戶服務
-- 零工經濟和副業文化成長，人們尋求彈性、低風險的創業機會
-- 訂閱模式在數位服務中被接受，尤其是解決特定痛點的微型服務
+- 台灣消費者對永續商品需求成長，特別是日常用品如清潔用品、個人護理和零食
+- 消費者願意为環保產品付溢價，但需要便利的購買管道和明顯的環境效益證明
+- 許多傳統小商家（社區商店、市場攤販）缺乏數位工具來推廣永續產品
+- 零售業正在轉向體驗導向和社區連結，消費者希望了解產品來源和製作故事
+- 政府推動循環經濟政策，提供補助和資源給環境友善的創業團隊
 生成的想法:
-1. LINE 預約小幫手 2.0: 基於 LINE Official Account 的智能預約系統，整合 AI 時間建議和自動重新排程
-   SCAMPER技巧: Substitute: 取代傳統電話預約和紙本行事曆, Combine: 結合 LINE 聊天、行事曆和提醒功能, Adapt: 借鏡醫療預約系統，適應小店需求...
-   HMW問題: How might we reduce no-shows for small business appointments?, How might we make booking as simple as sending a sticker?
-2. AI 食譜產生器 for 小吃攤: 根據當季食材和地區口味偏好，AI 生成創新小吃食譜和製作流程
-   SCAMPER技巧: Substitute: 取代傳統食譜書和口傳經驗, Combine: 結合地方食材資料庫和口味偏好模型, Adapt: 借鏡藥物設計的生成式AI，應用於食品創新...
-   HMW問題: How might we help small food vendors innovate their menu regularly?, How might we reduce food waste through better ingredient utilization?
-3. 社區技能時間銀行: 以時間為單位的技能交換平台，使用 LINE bot 管理時數和服務配對
-   SCAMPER技巧: Substitute: 取代傳統時間銀行的紙本記錄和電話協調, Combine: 結合 LINE 社群、時數追蹤和服務評價, Adapt: 借鏡共享經濟模式，應用於技能交換...
-   HMW問題: How might we make skill exchange as easy as sending a LINE message?, How might we build trust in informal service exchanges?
+1. 永續補充站網路: 在社區便利商店、藥妝店設置可重複使用容器的補充站，提供洗髮精、沐浴乳、清潔劑等日常用品的散裝購買
+   驗證重點: 環境意識強的都市上班族和年輕家庭，尤其住在靠近社區商店的地區 | 減少一次塑料使用，提供實惠的永續選擇，解決消費者想環保但找不...
 
-選中的想法: LINE 預約小幫手 2.0
+2. 在地手作零食訂閱盒: 每月訂閱盒收集台灣各地小農、手作坊的健康零食（如無添加堅果乾果、傳統餅乾、在地特色小食），附加產地故事和製作過程
+   驗證重點: 注重健康的都市上班族（25-45歲），關心食品來源和願意支援小農的消費者 | 解決小農和手作坊缺乏行銷管道和穩定銷售 channel 的問...
+
+3. 社區技能時間銀行APP: 基於LINE的社區技能交換平台，居民可以提供/需求各種技能（修家事、語言教學、園藝、程式設計等），以小時為單位記賬
+   驗證重點: 中高齡居民（有時間提供技能）和年輕家庭（需要幫手但預算有限），特別是在封閉式社區或新市鎮 | 解決社區居民之間的技能 mismatch（有人有時間想幫忙但...
+
+選中的想法: 永續補充站網路
 驗證:
-- target_customer: 台灣地區員工少於5人的小型商家或社區組織
-- how_they_find: 透過 LINE 群組、地區社團協會或在地商業街訪問
-- problem_solved: 解決特定痛點：預約效率低、食譜創新乏力或社區資源閒置
-- solution: 基於 LINE Official Account 的智能預約系統，整合 AI 時間建議和自動重新排程
-- channels: LINE Official Account、地區商店街協會、社區公告板
-- revenue_model: 月費訂閱 NT$200-500 或交易手續費 5%
-- biggest_assumption: 目標客群願意為數位解決方案付費且具備基本 LINE 使用能力
+- target_customer: 環境意識強的都市上班族和年輕家庭，尤其住在靠近社區商店的地區
+- how_they_find: 透過社區公告板、環境團體合作、Instagram分享和Google搜尋『零廢棄物補充站』
+- problem_solved: 減少一次塑料使用，提供實惠的永續選擇，解決消費者想環保但找不到便利購買點的痛點
+- solution: 與社區商店合作安裝補充設備，消費者自帶容器或購買可重複使用容器，按重量付費
+- channels: 社區商店合作、環境NGO推廣、社區戶長資訊板、Facebook社群
+- revenue_model: 設備租賃費用 + 產品加成 margin (30-50%)
+- biggest_assumption: 消費者願意改變購買習慣並攜帶容器去補充
 
-後續步驟或假設測試: LINE 預約小幫手 2.0 被選為首選想法，因為：
-1. 最低測試門檻：可使用現有 LINE Official Account 和簡單的網頁表單快速原型
-2. 明顯客戶需求：台灣小店普遍面臨預約管理問題，願意付費解決
-3. 簡單驗證路徑：可先在 3-5 家知己店家免費試用，收集回饋後付費推廣
-下一步: 製作簡單的 LINE 預約原型，使用 Google Forms + LINE Notify 進行 MVP 測試
+後續步驟或假設測試: 永續補充站網路 被選為首選想法，因為：
+1. 最低測試門檻：可先與一兩家社區商店合作試點，使用簡單的量具和容器
+2. 明顯客戶需求：台灣塑料減量政策推動下，消費者正尋找實際行動方式
+3. 簡單驗證路徑：先在特定社區（如天母、士林）進行小規模試用，收集使用頻率和滿意度
+下一步: 準備提案書拜訪 3 家目標社區商店，設計簡單的補充站試用方案
 === 記錄結束 ===
