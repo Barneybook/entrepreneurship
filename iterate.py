@@ -146,6 +146,7 @@ os.system("git config user.name 'Hermes Agent' > /dev/null 2>&1")
 os.system("git config user.email 'hermes@agent.local' > /dev/null 2>&1")
 os.system("git add iteration_log.md iteration_log_*.md > /dev/null 2>&1")
 os.system(f"git commit -m 'Entrepreneurship iteration: {timestamp}' > /dev/null 2>&1")
+os.system("git push origin master > /dev/null 2>&1")
 
 # Output the media path for the timestamped log
 print(f"MEDIA: {timestamped_log_path}")
