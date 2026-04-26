@@ -7,13 +7,31 @@ timestamp_iso = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S%z")
 if len(timestamp_iso) == 23:
     timestamp_iso = timestamp_iso[:-2] + ':' + timestamp_iso[-2:]
 
-# Read focus area from file, default if not found
-focus_area_file = "/root/entrepreneurship/current_focus_area.txt"
-if os.path.exists(focus_area_file):
-    with open(focus_area_file, "r", encoding="utf-8") as f:
-        focus_area = f.read().strip()
+# Read focus areas and implement rotation
+focus_areas_file = "/root/entrepreneurship/focus_areas.txt"
+last_index_file = "/root/entrepreneurship/last_focus_index.txt"
+current_area_file = "/root/entrepreneurship/current_focus_area.txt"
+
+if os.path.exists(focus_areas_file):
+    with open(focus_areas_file, "r", encoding="utf-8") as f:
+        focus_areas = [line.strip() for line in f if line.strip()]
 else:
-    focus_area = "低門檻數位服務，所需前期投資最小"
+    focus_areas = ["低門檻數位服務，所需前期投資最小"]
+
+if os.path.exists(last_index_file):
+    with open(last_index_file, "r", encoding="utf-8") as f:
+        last_index = int(f.read().strip())
+else:
+    last_index = -1
+
+next_index = (last_index + 1) % len(focus_areas)
+focus_area = focus_areas[next_index]
+
+# Update the files for next iteration
+with open(current_area_file, "w", encoding="utf-8") as f:
+    f.write(focus_area)
+with open(last_index_file, "w", encoding="utf-8") as f:
+    f.write(str(next_index))
 
 # Trend summary based on general knowledge (since search was blocked)
 trend_summary = """- 許多傳統小企業仍依賴紙本或基本的數位工具，數位轉換需求高但資源有限。
